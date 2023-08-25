@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gauge Chart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center">
+    <div class="relative font-bold text-green-600">
+        <h5 class="absolute top-[250px] left-[280px]"> {{ temperature }} °C</h5>
+        <h5 class="absolute top-[250px] left-[720px]"> {{ humidity }} %</h5>
+        <img src="data:image/png;base64,{{ plot_data }}" alt="Gauge Chart">
+    </div>
+</body>
+</html>
